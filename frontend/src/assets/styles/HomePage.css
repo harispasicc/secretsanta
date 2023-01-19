@@ -1,0 +1,185 @@
+.CentralDiv {
+  background-color: red;
+  height: 1000px;
+  margin-top: -4%;
+  /* padding-left: 10%; */
+}
+
+.GameDiv {
+  height: 700px;
+  width: 1000px;
+  background-color: white;
+  border: 10px orange;
+  color: black;
+  margin: 10px auto;
+}
+.TitleOfGame {
+  position: relative;
+  margin-left: 25% !important;
+  font-size: 80px;
+  color: white;
+  margin-top: -5%;
+}
+.BtnBack {
+  float: right !important;
+  margin-right: 20px !important;
+}
+.mainDiv {
+  padding: 2%;
+}
+.GameIframe {
+  height: 700px;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+}
+.BtnGetStarted {
+  margin-left: 42% !important;
+  margin-top: 10% !important;
+  border-radius: 10%;
+}
+.BtnChoose {
+  margin-top: 20%;
+}
+.NewYearDiv {
+  text-align: center;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 720px;
+  margin-left: 30%;
+  margin-top: 4%;
+  color: white;
+  background-image: url(../images/chrismasBcg.jpg);
+  border: 1px solid white;
+}
+
+.TimezoneDiv {
+  margin-left: 32%;
+  background-color: red;
+  border: 1px solid white;
+  color: white;
+  width: 300px;
+  height: 30px;
+  font-size: large;
+  margin-top: 0.8%;
+}
+
+.TimezoneDiv:hover {
+  background-color: rgb(192, 27, 27);
+}
+
+.GiftsRow1 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top: 5%;
+}
+.GiftsRow2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+  padding-left: 30%;
+  padding-right: 30%;
+  margin: 0 auto;
+}
+.snow {
+  position: absolute;
+  animation: snow 20s linear infinite;
+}
+
+@media only screen and (min-width: 768px) {
+  .NewYearDiv {
+    margin-left: 5%;
+  }
+  .BtnGetStarted {
+    margin-left: 35% !important;
+  }
+  .GameIframe {
+    width: 764px;
+  }
+  .GameDiv {
+    background-color: red;
+    width: 764px;
+  }
+  .TitleOfGame {
+    margin-left: 32% !important;
+  }
+
+  .BtnGetStarted {
+    margin-left: 43% !important;
+    margin-top: 10% !important;
+    border-radius: 10%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .NewYearDiv {
+    margin-left: 15%;
+  }
+  .TitleOfGame {
+    margin-left: 30%;
+  }
+  .BtnGetStarted {
+    margin-left: 35% !important;
+  }
+  .GiftsRow1 {
+    margin-left: -2%;
+  }
+  .GiftsRow2 {
+    margin-left: 1%;
+  }
+  .BtnGetStarted {
+    margin-left: 45% !important;
+    margin-top: 7% !important;
+  }
+
+  .TimezoneDiv {
+    margin-left: 35%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .NewYearDiv {
+    margin-left: 27%;
+  }
+  .TimezoneDiv {
+    margin-left: 41%;
+  }
+
+  .GiftsRow1 {
+    margin-left: 4%;
+  }
+  .GiftsRow2 {
+    margin-left: 6%;
+  }
+
+  .BtnGetStarted {
+    width: 10%;
+    margin-left: 45% !important;
+    margin-top: 5% !important;
+  }
+
+  .TitleOfGame {
+    margin-left: 38% !important;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .NewYearDiv {
+    margin-left: 37%;
+  }
+  .TimezoneDiv {
+    margin-left: 45%;
+  }
+
+  .TitleOfGame {
+    margin-left: 43% !important;
+  }
+
+  .BtnGetStarted {
+    width: 10%;
+    margin-left: 45% !important;
+    margin-top: 3% !important;
+  }
+}

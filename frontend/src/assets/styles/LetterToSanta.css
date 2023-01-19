@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css?family=Satisfy");
+
+.howItWorks {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4px;
+  width: 300px;
+  height: 200px;
+  margin: 30px;
+}
+
+.paper {
+  width: 300px;
+  padding: 20px;
+  position: absolute;
+  height: 240px;
+  top: 490px;
+  left: 40px;
+}
+
+.titleBox {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.img {
+  height: 350px;
+  width: 350px;
+  margin-left: 100px;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.parentalMode {
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center bottom;
+  overflow: hidden;
+  position: relative;
+}
+
+.snow,
+.snow:before,
+.snow:after {
+  pointer-events: none;
+  position: absolute;
+  top: -650px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: radial-gradient(4px 4px at 100px 50px, #fff, transparent),
+    radial-gradient(6px 6px at 200px 150px, #fff, transparent),
+    radial-gradient(3px 3px at 300px 250px, #fff 50%, transparent),
+    radial-gradient(4px 4px at 400px 350px, #fff 50%, transparent),
+    radial-gradient(6px 6px at 500px 100px, #fff 50%, transparent),
+    radial-gradient(3px 3px at 50px 200px, #fff 50%, transparent),
+    radial-gradient(4px 4px at 150px 300px, #fff 50%, transparent),
+    radial-gradient(6px 6px at 250px 400px, #fff 50%, transparent),
+    radial-gradient(3px 3px at 350px 500px, #fff 50%, transparent);
+  background-size: 650px 650px;
+  animation: snow 3s linear infinite;
+  content: "";
+}
+
+.snow:after {
+  margin-left: -250px;
+  opacity: 0.5;
+  filter: blur(2px);
+  animation-duration: 6s;
+  animation-direction: reverse;
+}
+
+.snow:before {
+  margin-left: -350px;
+  opacity: 0.7;
+  filter: blur(1px);
+  animation-duration: 9s;
+  animation-direction: reverse;
+}
+
+@keyframes snow {
+  to {
+    transform: translateY(650px);
+  }
+}
+
+.modalLetter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400;
+  background-color: white;
+  border: 1px solid #000;
+  color: black;
+  box-shadow: 24;
+  padding: 4px 34px 34px;
+}
+
+.modalTitle {
+  text-align: center;
+}
+
+.paper-right {
+  margin-top: 70px;
+}
+
+.child-line {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.add-child {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.modal-buttons {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-buttons Button {
+  margin-left: 10px;
+}
+
+.icon-right {
+  position: absolute;
+  width: 450px;
+  padding: 20px;
+  top: 250px;
+  right: 40px;
+}
+
+.child-message {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4px;
+  width: 550px;
+  height: 100px;
+  margin: 50px 30px 30px 30px;
+}
+
+.child-wish-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.child-wish-input {
+  display: flex;
+  align-items: center;
+  width: 600px;
+}
+
+.child-wish-input Button {
+  margin-left: 10px;
+  height: 50px;
+  width: 100px;
+}
+
+.gift-box-icon {
+  width: 60px;
+  display: flex;
+  align-items: center;
+  float: left;
+}
+
+.delete-icon {
+  margin-right: 40px;
+}
+
+.edit-icon {
+  margin-left: 40px;
+}
+
+.child-done-button {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+}
+
+.side-gift-icon {
+  position: absolute;
+  right: 20px;
+  width: 220px;
+  z-index: -1;
+  bottom: 20px;
+}
+
+.frame {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  z-index: -1;
+}
+
+.parentSanta {
+  width: 320px;
+  position: absolute;
+  left: 80px;
+}
+
+.snowman {
+  width: 220px;
+  position: absolute;
+  right: 140px;
+  bottom: 30px;
+  z-index: -2;
+}
+
+#potentialPresents {
+  margin-left: 240px;
+  min-height: 300px;
+  margin-top: -15px;
+}
+
+.gifts {
+  margin-left: 500px;
+  margin-top: -160px;
+}
+
+.allDone {
+  margin-left: 50px;
+  position: absolute;
+  bottom: 40px;
+}
+
+.letter {
+  max-width: 250px;
+  position: absolute;
+  right: 40px;
+}
+
+.boxLetter {
+  background-color: rgba(255, 228, 196, 0.258);
+}
+
+@media screen and (max-width: 900px) {
+  .titleBox {
+    margin-top: 110px;
+  }
+
+  .paper {
+    top: 455px;
+  }
+
+  .img {
+    height: 300px;
+    width: 300px;
+    margin-left: 30px;
+  }
+
+  .snowman {
+    bottom: 200px;
+    right: 0;
+  }
+
+  #potentialPresents {
+    min-height: 350px;
+    margin-top: -150px;
+  }
+
+  .parentSanta {
+    left: -5px;
+  }
+
+  .letter {
+    max-width: 200px;
+    top: 60px;
+    right: 40px;
+  }
+
+  .gifts {
+    margin-left: 50px;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .titleBox {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .paper {
+    left: 130px;
+    top: 250px;
+  }
+
+  .img {
+    width: 280px;
+    height: 280px;
+    margin-left: 145px;
+    margin-top: -80px;
+  }
+
+  .paper-right {
+    margin: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .titleBox {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .paper {
+    left: 200px;
+    width: 340px;
+    padding: 30px;
+    height: 280px;
+    top: 400px;
+  }
+
+  .img {
+    width: 340px;
+    height: 340px;
+    margin-left: 180px;
+    margin-top: 20px;
+  }
+
+  .paper-right {
+    margin: 40px;
+    margin-top: 80px;
+  }
+
+  .snowman {
+    right: 180px;
+    width: 300px;
+  }
+
+  #potentialPresents {
+    min-height: 350px;
+    margin-top: -150px;
+    margin-left: 280px;
+  }
+
+  .parentSanta {
+    left: 140px;
+    width: 380px;
+  }
+}

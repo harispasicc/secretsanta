@@ -1,0 +1,24 @@
+{
+  "name": "santa-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "frontend": "cd frontend && npm start",
+    "backend": "cd backend && npm start",
+    "start": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zabec/santa-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zabec/santa-app/issues"
+  },
+  "homepage": "https://github.com/zabec/santa-app#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
